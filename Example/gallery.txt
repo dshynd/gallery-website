@@ -1,0 +1,16 @@
+{
+	"title" : "Example Gallery",
+	"heading" : "Example Gallery",
+	"items" : [
+				{
+					"image" : "selfieB.jpg",
+					"thumbnail" : "selfieT.jpg",
+					"text" : "Selfie by Lucy - Collage on canvas"
+				},
+                                {
+					"image" : "lucyBB.jpg",
+					"thumbnail" : "lucyBT.jpg",
+					"text" : "Another selfie by Lucy B - Collage on canvas"
+				}
+			]		
+}

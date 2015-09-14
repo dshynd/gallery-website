@@ -1,0 +1,55 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+	
+	<link rel=StyleSheet href="../gallery.css" type="text/css">
+	
+	<!--[if lt IE 8]><style>
+	.wraptocenter span {
+		display: inline-block;
+		height: 100%;
+	}
+	</style><![endif]-->
+  </head>
+  <body class="gallery">
+	<script src="../jquery.js"></script>
+	<script src="../menu.js"></script>
+	<script src="../gallery.js"></script>
+    
+	<div class="popup-overlay" id="popupOverlay"></div>
+	
+	<div id="popupContainer" class="popup-container">
+		<div id="hidePopup" class="popup-close">
+			<img src="../close.png">
+		</div>
+		
+		<a class="nav navL">
+			<span id="leftArrow"></span>
+		</a>
+		
+		<div id="contentContainer" class="content-container wraptocenter">
+			<span> </span>
+			<img id="popupImg" class="popup-img">
+			<div id="popupLabel" class="popup-label"></div>	
+		</div>	
+		
+		<a class="nav navR">
+			<span id="rightArrow"></span>
+		</a>
+	</div>
+	
+	<div id="bodyContainer" class="body-container" style="position: relative;">
+		<div id="menuContainer" class="menu-container">
+			<div class="menu-item home-item"><a href="../index.html">Home</a></div>
+		</div>
+		
+		<div id="galleryContainer" class="gallery-container">
+			<div id="heading" class="heading"></div>
+			<div id="gallery"></div>
+		</div>
+	</div>
+	
+	<div class="border-div"/>	
+  </body>
+</html>

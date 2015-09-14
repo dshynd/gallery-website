@@ -1,0 +1,9 @@
+{
+	"menu" : [
+				{
+					"name" : "Example Gallery",
+					"folder" : "Example"
+				}
+			]
+}			
+					

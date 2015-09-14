@@ -1,0 +1,171 @@
+.gallery{
+	background-color: #0F2058;
+	color: white;
+	font-family: Verdana,Arial,Helvetica,sans-serif;
+	margin: 0px;
+}
+
+.body-container{
+	background-color: #0F2058;
+	min-height: 500px;
+}
+			
+.popup-overlay{
+	min-width: 100%;
+	min-height: 100%;
+	z-index: 1000;
+	position: absolute;
+	top: 0;
+	left: 0;
+	background-color:black;
+	display: none;
+}
+
+.popup-container{
+	background-color: white;
+	border-radius: 8px;
+	z-index: 1001;
+	position: absolute;
+	display: none;
+}
+
+.center{
+	margin-left: auto;
+	margin-right: auto;
+	text-align: center;
+}
+
+.popup-close{
+	position:absolute;
+	top: 0px;
+	right: 0px;
+	cursor: pointer;
+	z-index: 1003;
+}
+
+.thumbnail{
+	max-width: 200px;
+	max-height: 100px;
+	margin-right: 50px;
+	margin-bottom: 50px;
+	border: 1px solid white;
+	cursor: pointer;
+}
+
+.nav{
+	height: 100%;
+	width: 15%;
+	position: absolute;
+	top: 0px;
+	z-index: 1002;
+}
+
+.nav span{
+	width: 144px;
+	height: 144px;
+	margin-top: -72px;
+	top: 50%;
+	position: absolute;
+	cursor: pointer;
+}
+
+.navL{
+	left: 0px;
+}
+
+.navL span{
+	background: url('left.png') no-repeat left center;
+	left: 0px;
+}
+
+.navR{
+	right: 0px;
+}
+
+.navR span{
+	background: url('right.png') no-repeat right center;
+	right: 0px;
+}
+
+.content-container{
+	overflow: none;
+	padding: 10px;
+}
+
+.popup-label{
+	position: absolute;
+	color: white;
+	background-color: black;
+	border-radius: 4px;
+	padding: 2px;
+	bottom: 5px;
+	max-width: 80%;
+	opacity: .75;
+}
+
+.popup-img{
+}
+
+.menu-container{
+	width: 150px;
+	border-right: 1px solid white;
+	float: left;
+	padding-top: 40px;
+}
+
+.gallery-container{
+	max-width: 800px;
+	margin-left: 175px;
+}
+
+.heading{
+	font-weight: bold;
+	font-size: 150%;
+	margin-bottom: 15px;
+	margin-top: 40px;
+}
+
+.menu-item{
+	padding: 2px 4px;
+	text-align: center;
+}
+
+.menu-item a{
+ 	color: white;
+ 	text-decoration: none;
+}
+
+.home-item a{
+	font-weight: bold;
+}
+
+.border-div{
+	position: absolute; 
+	width: 1px; 
+	height: 100%; 
+	top: 0px;
+	left: 150px; 
+	background-color: white;
+}
+
+.wraptocenter {
+	display: table-cell;
+	text-align: center;
+	vertical-align: middle;
+}
+
+.wraptocenter * {
+	vertical-align: middle;
+}
+
+/*\*//*/
+.wraptocenter {
+	display: block;
+}
+
+.wraptocenter span {
+	display: inline-block;
+	height: 100%;
+	width: 1px;
+}
+/**/

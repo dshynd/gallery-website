@@ -1,0 +1,58 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    
+    <title>Steve Batty Art</title>
+	
+	<link rel=StyleSheet href="gallery.css" type="text/css">
+	
+	<!--[if lt IE 8]><style>
+	.wraptocenter span {
+		display: inline-block;
+		height: 100%;
+	}
+	</style><![endif]-->
+  </head>
+  
+  <body class="gallery">
+	<script src="jquery.js"></script>
+	<script>
+	$(document).ready(function(){
+		$.getJSON("menu.txt", function(json){
+			var menuC = $("#menuContainer");	
+			$.each(json.menu, function(i, item){
+				var itemDiv = $(document.createElement("div"));
+				var itemLink = $(document.createElement("a"));
+				
+				itemLink.text(item.name)
+				.attr("href", item.folder + "/Gallery.html")
+				.appendTo(itemDiv);
+				
+				itemDiv.addClass("menu-item")
+				.appendTo(menuC);
+			});
+		});
+	});
+	</script>
+	
+	<div id="bodyContainer" class="body-container" style="position: relative;">
+		<div id="menuContainer" class="menu-container">
+			<div class="menu-item home-item"><a href="index.html">Home</a></div>
+		</div>
+		
+		<div id="galleryContainer" class="gallery-container">
+			<div id="heading" class="heading">Steve Batty Art</div>
+			<div id="gallery">
+				<p>A commission re-ignited my love of portraiture and this led to dozens of studies that have been exhibited at various shows over the past few years.<p/>
+				<p>I have also recently undertaken some still life work inspired mainly by my other passions, sport and family!<p/>
+				<p>I work mainly in pastels but also enjoy collage.</p>
+				<br/>
+				<img src="http://stevebattyart.co.uk/sitebuildercontent/sitebuilderpictures/SteveGallery/.pond/strip.jpg.w560h75.jpg">
+			</div>
+		</div>
+	</div>
+	
+	<div class="border-div"/>
+  </body>
+</html>
